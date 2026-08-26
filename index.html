@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAXTRAX EDITZ | Premium Edits & Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -21,7 +23,7 @@
         </a>
         
         <div class="nav-right-controls">
-            <!-- Capsule Theme Toggle -->
+            <!-- Capsule Style Theme Toggle -->
             <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
@@ -31,6 +33,7 @@
                     </div>
                 </label>
             </div>
+            
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -41,10 +44,24 @@
             <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
             <li><a href="#youtube"><i class="fab fa-youtube"></i> YouTube</a></li>
             <li><a href="#softwares"><i class="fas fa-layer-group"></i> Softwares</a></li>
-            <li class="mobile-only"><button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book Edit</button></li>
-            <li class="mobile-only"><button class="premium-btn feedbackBtnMobile" style="background: linear-gradient(45deg, #00f2fe, #4facfe);"><i class="fas fa-star"></i> Feedback</button></li>
+            
+            <!-- Mobile Menu Buttons -->
+            <li class="mobile-only">
+                <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-search"></i> Track Edit</button>
+            </li>
+            <li class="mobile-only">
+                <button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book Edit</button>
+            </li>
+            <li class="mobile-only">
+                <button class="premium-btn feedbackBtnMobile" style="background: linear-gradient(45deg, #00f2fe, #4facfe);"><i class="fas fa-star"></i> Feedback</button>
+            </li>
         </ul>
-        <button class="premium-btn desktop-only bookBtnMobile"><i class="fas fa-calendar-check"></i> Book an Edit</button>
+        
+        <!-- Desktop Buttons -->
+        <div class="desktop-only" style="display: flex; gap: 10px;">
+            <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-search"></i> Track Edit</button>
+            <button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book an Edit</button>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -106,6 +123,7 @@
     <section id="softwares" class="section-animate">
         <h2><i class="fas fa-desktop gradient-icon"></i> Editing Softwares</h2>
         <p style="text-align: center; margin-bottom: 40px; color: var(--text-secondary);">Click on an app to see its specifications</p>
+        
         <div class="app-grid">
             <div class="app-card" data-app="capcut"><img src="capcut.png" alt="CapCut" class="app-image"><span>CapCut</span></div>
             <div class="app-card" data-app="alight"><img src="alight.png" alt="Alight Motion" class="app-image"><span>Alight Motion</span></div>
@@ -114,10 +132,12 @@
             <div class="app-card" data-app="picsart"><img src="picsart.png" alt="Picsart" class="app-image"><span>Picsart</span></div>
             <div class="app-card" data-app="node"><img src="node.png" alt="Node Video" class="app-image"><span>Node Video</span></div>
         </div>
+
         <div id="app-specs-container" class="app-specs-container">
             <h3 id="spec-title" class="highlight"></h3>
             <p id="spec-desc"></p>
         </div>
+        
         <div class="button-capsule-container">
             <button class="premium-btn bookBtnMobile btn-large"><i class="fas fa-calendar-check"></i> Book an Edit Now</button>
             <button class="premium-btn feedbackBtnMobile btn-large feedback-color"><i class="fas fa-star"></i> Feedback</button>
@@ -126,7 +146,7 @@
 
     <!-- FAQ Section -->
     <section id="faq" class="section-animate">
-        <h2><i class="fas fa-question-circle gradient-icon"></i> FAQ</h2>
+        <h2><i class="fas fa-question-circle gradient-icon"></i> Frequently Asked Questions</h2>
         <div class="faq-container">
             <div class="faq-item"><button class="faq-question">How much do you charge for an edit? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Pricing depends on the project's complexity, duration, and style. Fill out the booking form, and I'll send you a custom quote!</p></div></div>
             <div class="faq-item"><button class="faq-question">What software do you mainly use? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>I primarily use CapCut, Alight Motion, and After Motion to deliver seamless transitions, color grading, and heavy aesthetic effects.</p></div></div>
@@ -162,6 +182,26 @@
         </div>
     </footer>
   
+    <!-- Track Edit Modal -->
+    <div id="trackModal" class="modal-overlay">
+        <div class="modal-glass">
+            <button class="close-btn" data-close="trackModal">&times;</button>
+            <h2>Track Your Edit</h2>
+            <p>Enter your unique code to check project status.</p>
+            <form id="trackForm">
+                <div class="input-group">
+                    <input type="text" id="trackCodeInput" required placeholder="Tracking Code (e.g., NAX-AK5279#)">
+                </div>
+                <div class="input-group">
+                    <label id="captchaLabel" style="color: var(--text-secondary); margin-bottom: 8px; display: block; font-size: 14px;"></label>
+                    <input type="number" id="captchaInput" required placeholder="Solve the math above">
+                </div>
+                <button type="submit" class="premium-btn submit-btn" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-satellite-dish"></i> Check Status</button>
+            </form>
+            <div id="trackResult" style="margin-top: 20px; display: none; padding: 15px; border-radius: 10px; background: rgba(0,0,0,0.3); border: 1px solid var(--card-border); font-size: 14px; line-height: 1.6;"></div>
+        </div>
+    </div>
+
     <!-- Booking Modal -->
     <div id="bookingModal" class="modal-overlay">
         <div class="modal-glass">
@@ -169,6 +209,8 @@
             <h2>Client Portal</h2>
             <p>Fill in your details to book an edit.</p>
             <form id="bookingForm" action="https://formspree.io/f/mgawqzpn" method="POST">
+                <!-- Hidden input for tracking code generation -->
+                <input type="hidden" name="Client_Tracking_Code" id="hiddenTrackingCode">
                 <div class="input-group"><input type="text" name="name" required placeholder="Full Name *"></div>
                 <div class="input-group"><input type="tel" name="mobile" required placeholder="Mobile Number *"></div>
                 <div class="input-group"><input type="email" name="email" required placeholder="Email Address *"></div>
@@ -204,12 +246,13 @@
         </div>
     </div>
 
-    <!-- Custom Success Alert -->
+    <!-- Dynamic Success Alert with Tracking Code Space -->
     <div id="successAlert" class="custom-alert">
         <div class="alert-content">
             <div class="success-icon"><i class="fas fa-check-circle"></i></div>
-            <h3 style="color: var(--text-primary);">Awesome!</h3>
-            <p>Your details have been successfully submitted. NAXTRAX EDITZ will contact you soon.</p>
+            <h3 id="alertTitle" style="color: var(--text-primary);">Awesome!</h3>
+            <p id="alertMessage">Your details have been successfully submitted.</p>
+            <h4 id="generatedCodeDisplay" style="margin: 15px 0; font-size: 20px; letter-spacing: 2px; display: none;"></h4>
             <button id="closeAlertBtn" class="premium-btn alert-btn">Got it!</button>
         </div>
     </div>
