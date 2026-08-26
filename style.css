@@ -34,7 +34,6 @@ body.light-mode {
 html { scroll-behavior: smooth; }
 body { background: var(--bg-gradient); color: var(--text-primary); overflow-x: hidden; transition: background 0.5s ease, color 0.5s ease; }
 
-/* 1. Super Fast & Smooth Cursor Glow */
 #cursor-glow {
     position: fixed; top: 0; left: 0; width: 300px; height: 300px;
     background: radial-gradient(circle, var(--glow-color) 0%, rgba(0,0,0,0) 70%);
@@ -46,17 +45,14 @@ body { background: var(--bg-gradient); color: var(--text-primary); overflow-x: h
 
 section, nav, header, footer, .modal-overlay { position: relative; z-index: 1; }
 
-/* Navigation */
 nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; position: fixed; width: 100%; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); transition: all 0.4s ease; }
 .logo-link { display: flex; align-items: center; text-decoration: none; cursor: pointer; }
 .logo-text { font-size: 24px; font-weight: 800; color: var(--text-primary); }
 .logo-text span { color: #9d4edd; }
 
-/* Smart Logo Hide/Show with GPU Acceleration */
 .nav-logo { max-width: 0; opacity: 0; transform: scale(0); border-radius: 50%; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); will-change: transform, max-width, opacity; }
 nav.scrolled .nav-logo { max-width: 35px; opacity: 1; transform: scale(1); margin-right: 10px; box-shadow: 0 0 10px rgba(157, 78, 221, 0.5); }
 
-/* Capsule Theme Switch - Smooth Fix */
 .nav-right-controls { display: flex; align-items: center; gap: 20px; }
 .theme-switch-wrapper { display: flex; align-items: center; }
 .theme-switch { position: relative; display: inline-block; width: 65px; height: 32px; }
@@ -72,6 +68,11 @@ input:not(:checked) + .slider .fa-moon { color: #fff; }
 .nav-links { list-style: none; display: flex; gap: 30px; align-items: center; }
 .nav-links a { color: var(--text-primary); text-decoration: none; font-size: 15px; letter-spacing: 1px; transition: color 0.3s ease; display: flex; align-items: center; gap: 8px; }
 .nav-links a:hover { color: #c77dff; }
+
+/* Desktop block */
+.desktop-only { display: none; }
+@media (min-width: 769px) { .desktop-only { display: inline-flex !important; } }
+
 .mobile-only { display: none; }
 
 .premium-btn { background: linear-gradient(45deg, #7b2cbf 0%, #c77dff 100%); color: #fff; border: none; padding: 10px 25px; border-radius: 30px; font-weight: 600; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
@@ -82,21 +83,12 @@ input:not(:checked) + .slider .fa-moon { color: #fff; }
 section { padding: 100px 10%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; }
 
 h2 { font-size: 40px; margin-bottom: 20px; background: linear-gradient(45deg, #e0aaff, #c77dff, #9d4edd); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: flex; align-items: center; justify-content: center; gap: 15px; text-align: center; }
-.yt-heading { white-space: nowrap; } /* YouTube heading in one line */
+.yt-heading { white-space: nowrap; } 
 
-/* CSS Error Fix */
-.gradient-icon {
-    -webkit-text-fill-color: initial;
-    color: transparent;
-    background: linear-gradient(45deg, #c77dff, #00f2fe);
-    -webkit-background-clip: text;
-    background-clip: text; 
-    text-shadow: 0 0 20px rgba(199, 125, 255, 0.7); 
-}
+.gradient-icon { -webkit-text-fill-color: initial; color: transparent; background: linear-gradient(45deg, #c77dff, #00f2fe); -webkit-background-clip: text; background-clip: text; text-shadow: 0 0 20px rgba(199, 125, 255, 0.7); }
 
 p { color: var(--text-secondary); line-height: 1.6; }
 
-/* Hero Logo Smoothness */
 .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding-top: 60px; }
 .hero-logo { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; margin-bottom: 25px; box-shadow: 0 0 30px rgba(157, 78, 221, 0.4); animation: floatLogo 4s ease-in-out infinite; transition: transform 0.4s ease, opacity 0.4s ease; will-change: transform, opacity; }
 .hero-logo.hidden { opacity: 0; transform: scale(0.5); pointer-events: none; }
@@ -177,14 +169,14 @@ p { color: var(--text-secondary); line-height: 1.6; }
     .nav-links.active { right: 0; }
     .nav-links li { margin-bottom: 30px; }
     .nav-links a { font-size: 20px; }
-    .desktop-only { display: none; }
     .mobile-only { display: block; }
+    .desktop-only { display: none !important; }
     .hero { padding-top: 100px; }
     .hero-logo { width: 100px; height: 100px; }
     .hero h1 { font-size: 32px; line-height: 1.4; margin-top: 15px; }
     .hero p { font-size: 14px; padding: 0 15px; }
     h2 { font-size: 28px; }
-    .yt-heading { font-size: 22px; } /* Ensures it fits on 1 line on mobile */
+    .yt-heading { font-size: 22px; } 
     section { padding: 80px 5%; }
     .footer-container { flex-direction: column; text-align: center; }
     .footer-col ul li a { justify-content: center; }
