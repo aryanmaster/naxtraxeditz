@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAXTRAX EDITZ | Premium Edits & Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Smooth Dynamic Cursor Glow -->
     <div id="cursor-glow"></div>
 
-    <!-- Navigation -->
     <nav id="navbar">
         <a href="#home" class="logo-link">
             <img src="logo.png" alt="Logo" class="nav-logo" id="navLogo">
@@ -23,17 +19,6 @@
         </a>
         
         <div class="nav-right-controls">
-            <!-- Capsule Style Theme Toggle -->
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                    </div>
-                </label>
-            </div>
-            
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -45,7 +30,6 @@
             <li><a href="#youtube"><i class="fab fa-youtube"></i> YouTube</a></li>
             <li><a href="#softwares"><i class="fas fa-layer-group"></i> Softwares</a></li>
             
-            <!-- Mobile Menu Buttons -->
             <li class="mobile-only">
                 <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-search"></i> Track Edit</button>
             </li>
@@ -57,14 +41,12 @@
             </li>
         </ul>
         
-        <!-- Desktop Buttons -->
         <div class="desktop-only" style="display: flex; gap: 10px;">
             <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-search"></i> Track Edit</button>
             <button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book an Edit</button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header id="home" class="hero section-animate">
         <img src="logo.png" alt="Naxtrax Logo" class="hero-logo" id="heroLogo">
         <div class="hero-content">
@@ -77,7 +59,6 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="about" class="section-animate">
         <h2>Who Am I?</h2>
         <div class="glass-card about-glass">
@@ -86,7 +67,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="section-animate">
         <h2><i class="fas fa-briefcase gradient-icon"></i> My Best Edits</h2>
         <div class="grid-container">
@@ -109,7 +89,6 @@
         </div>
     </section>
 
-    <!-- YouTube Section -->
     <section id="youtube" class="section-animate">
         <h2 class="yt-heading"><i class="fab fa-youtube gradient-icon"></i> My YouTube Channel</h2>
         <div class="glass-card yt-card" style="width: 100%; max-width: 600px; margin: 0 auto; text-align: center;">
@@ -119,7 +98,6 @@
         </div>
     </section>
   
-    <!-- Softwares Section -->
     <section id="softwares" class="section-animate">
         <h2><i class="fas fa-desktop gradient-icon"></i> Editing Softwares</h2>
         <p style="text-align: center; margin-bottom: 40px; color: var(--text-secondary);">Click on an app to see its specifications</p>
@@ -137,8 +115,85 @@
             <h3 id="spec-title" class="highlight"></h3>
             <p id="spec-desc"></p>
         </div>
-        
-        <div class="button-capsule-container">
+    </section>
+
+    <section id="reviews" class="section-animate" style="overflow: hidden; padding-top: 40px;">
+        <h2><i class="fas fa-star gradient-icon"></i> Loved by Creators</h2>
+        <p style="text-align: center; margin-bottom: 40px; color: var(--text-secondary);">Tap on any review to read</p>
+
+        <div class="marquee-wrapper">
+            <div class="marquee-track track-left">
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"NAXTRAX turned my raw gaming clips into an absolute masterpiece. The shakes and CC are insane!"</p><h4>~ Aryan K.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The visual storytelling is fantastic. Completely transformed my boring vlog into a movie!"</p><h4>~ Kajal</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Best anime editor out there! The transitions were buttery smooth. Highly recommended."</p><h4>~ Rohan S.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Delivered exactly what I wanted for my commercial ad. Very professional and fast."</p><h4>~ Priya M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Bro's editing is on another level! OP level shakes and perfect sync with the beat."</p><h4>~ Rahul T.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Loved the cinematic montage! The color grading gave my video a premium feel."</p><h4>~ Vikram R.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"10/10 would hire again. The 3D tracking and masking were absolutely flawless."</p><h4>~ Sameer K.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Exceeded my expectations! Delivered the video ahead of schedule with premium quality."</p><h4>~ Aisha F.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Absolutely killed it with the color grading. My video looks like a Hollywood trailer now!"</p><h4>~ Siddharth V.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Perfect beat sync! Every transition hit right on the drop. Amazing work."</p><h4>~ Kabir M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Very cooperative and understood exactly what vibe I wanted for my reel."</p><h4>~ Neha P.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Great quality and fast delivery. I will definitely be coming back for more edits."</p><h4>~ Imran H.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The flow of the video is so natural. NAXTRAX knows how to keep viewers engaged."</p><h4>~ Aditya N.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Top tier aesthetic vibes! The text animation was so clean and modern."</p><h4>~ Kavya S.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I'm genuinely impressed by the attention to detail. Every frame is perfect."</p><h4>~ Pranav K.</h4></div>
+                
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"NAXTRAX turned my raw gaming clips into an absolute masterpiece. The shakes and CC are insane!"</p><h4>~ Aryan K.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The visual storytelling is fantastic. Completely transformed my boring vlog into a movie!"</p><h4>~ Kajal</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Best anime editor out there! The transitions were buttery smooth. Highly recommended."</p><h4>~ Rohan S.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Delivered exactly what I wanted for my commercial ad. Very professional and fast."</p><h4>~ Priya M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Bro's editing is on another level! OP level shakes and perfect sync with the beat."</p><h4>~ Rahul T.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Loved the cinematic montage! The color grading gave my video a premium feel."</p><h4>~ Vikram R.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"10/10 would hire again. The 3D tracking and masking were absolutely flawless."</p><h4>~ Sameer K.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Exceeded my expectations! Delivered the video ahead of schedule with premium quality."</p><h4>~ Aisha F.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Absolutely killed it with the color grading. My video looks like a Hollywood trailer now!"</p><h4>~ Siddharth V.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Perfect beat sync! Every transition hit right on the drop. Amazing work."</p><h4>~ Kabir M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Very cooperative and understood exactly what vibe I wanted for my reel."</p><h4>~ Neha P.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Great quality and fast delivery. I will definitely be coming back for more edits."</p><h4>~ Imran H.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The flow of the video is so natural. NAXTRAX knows how to keep viewers engaged."</p><h4>~ Aditya N.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Top tier aesthetic vibes! The text animation was so clean and modern."</p><h4>~ Kavya S.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I'm genuinely impressed by the attention to detail. Every frame is perfect."</p><h4>~ Pranav K.</h4></div>
+            </div>
+        </div>
+
+        <div class="marquee-wrapper" style="margin-top: 20px;">
+            <div class="marquee-track track-right">
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Insane motion blur and optical flow! Made my normal clips look 60fps smooth."</p><h4>~ Varun S.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Super cooperative and quick turnaround. The tracking code system is also very cool!"</p><h4>~ Aman Y.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"My YouTube channel grew so much just because of these high-retention edits. Thank you!"</p><h4>~ Manish G.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Flawless typography and masking. Better than big agencies I've worked with."</p><h4>~ Karthik R.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I was blown away by the attention to detail. Every beat drop matched perfectly!"</p><h4>~ Kunal B.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Absolutely insane motion blur and optical flow. Made my gaming clips look elite."</p><h4>~ Zainab B.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Communication was clear, and the final output was beyond what I imagined."</p><h4>~ Arif M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The best investment for my channel. The audience retention skyrocketed!"</p><h4>~ Ishita M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Smooth, clean, and highly aesthetic. Exactly the vibe I was looking for."</p><h4>~ Arjun D.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"No one does it better! The dynamic shakes and zooms are top notch."</p><h4>~ Riya C.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Mind-blowing transitions! It kept me hooked from the first second to the last."</p><h4>~ Ravi P.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Professionalism at its peak. Loved the automated tracking system too."</p><h4>~ Akash J.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Can't recommend NAXTRAX enough. Turned my basic footage into pure magic."</p><h4>~ Diya R.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The color correction brought so much life to the dull footage I provided."</p><h4>~ Shaurya V.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Such a seamless experience! The final video was just breathtaking."</p><h4>~ Ritik A.</h4></div>
+
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Insane motion blur and optical flow! Made my normal clips look 60fps smooth."</p><h4>~ Varun S.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Super cooperative and quick turnaround. The tracking code system is also very cool!"</p><h4>~ Aman Y.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"My YouTube channel grew so much just because of these high-retention edits. Thank you!"</p><h4>~ Manish G.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Flawless typography and masking. Better than big agencies I've worked with."</p><h4>~ Karthik R.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I was blown away by the attention to detail. Every beat drop matched perfectly!"</p><h4>~ Kunal B.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Absolutely insane motion blur and optical flow. Made my gaming clips look elite."</p><h4>~ Zainab B.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Communication was clear, and the final output was beyond what I imagined."</p><h4>~ Arif M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The best investment for my channel. The audience retention skyrocketed!"</p><h4>~ Ishita M.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Smooth, clean, and highly aesthetic. Exactly the vibe I was looking for."</p><h4>~ Arjun D.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"No one does it better! The dynamic shakes and zooms are top notch."</p><h4>~ Riya C.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Mind-blowing transitions! It kept me hooked from the first second to the last."</p><h4>~ Ravi P.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Professionalism at its peak. Loved the automated tracking system too."</p><h4>~ Akash J.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Can't recommend NAXTRAX enough. Turned my basic footage into pure magic."</p><h4>~ Diya R.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The color correction brought so much life to the dull footage I provided."</p><h4>~ Shaurya V.</h4></div>
+                <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Such a seamless experience! The final video was just breathtaking."</p><h4>~ Ritik A.</h4></div>
+            </div>
+        </div>
+
+        <div class="button-capsule-container" style="margin-top: 60px;">
             <button class="premium-btn bookBtnMobile btn-large"><i class="fas fa-calendar-check"></i> Book an Edit Now</button>
             <button class="premium-btn feedbackBtnMobile btn-large feedback-color"><i class="fas fa-star"></i> Feedback</button>
         </div>
@@ -158,11 +213,29 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="premium-footer">
-        <div class="footer-container">
+    <!-- Seamless Compact Footer -->
+    <footer class="premium-footer section-animate">
+        <div class="footer-grid">
             <div class="footer-col">
-                <h3>LEGAL</h3>
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">My Best Edits</a></li>
+                    <li><a href="#youtube">YouTube</a></li>
+                    <li><a href="#softwares">Softwares</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Anime Edits</a></li>
+                    <li><a href="#">Cinematic Montages</a></li>
+                    <li><a href="#">Commercial Ads</a></li>
+                    <li><a href="#">Color Grading</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
                 <ul class="legal-links">
                     <li><a href="#" data-legal="terms">Terms of Service</a></li>
                     <li><a href="#" data-legal="privacy">Privacy Policy</a></li>
@@ -170,15 +243,31 @@
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>SOCIAL</h3>
-                <ul class="social-links">
-                    <li><a href="https://t.me/naxtraxeditz" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
-                    <li><a href="https://www.youtube.com/@NaxtraxEditzOfficial" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#" class="feedbackBtnMobile">Submit Feedback</a></li>
+                    <li><a href="#" class="trackBtnMobile">Track Edit Status</a></li>
                 </ul>
             </div>
         </div>
+
+        <div class="footer-social-category">
+            <h3>Social</h3>
+            <div class="social-row">
+                <div class="social-item">
+                    <a href="https://www.youtube.com/@NaxtraxEditzOfficial" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <span>YouTube</span>
+                </div>
+                <div class="social-item">
+                    <a href="https://t.me/naxtraxeditz" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <span>Telegram</span>
+                </div>
+            </div>
+        </div>
+
         <div class="footer-bottom">
-            <p><i class="far fa-copyright"></i> 2026 NAXTRAX EDITZ, Inc. All rights reserved.</p>
+            <p><i class="far fa-copyright"></i> 2026 NAXTRAX EDITZ<br>Inc. All rights reserved.</p>
         </div>
     </footer>
   
@@ -209,7 +298,6 @@
             <h2>Client Portal</h2>
             <p>Fill in your details to book an edit.</p>
             <form id="bookingForm" action="https://formspree.io/f/mgawqzpn" method="POST">
-                <!-- Hidden input for tracking code generation -->
                 <input type="hidden" name="Client_Tracking_Code" id="hiddenTrackingCode">
                 <div class="input-group"><input type="text" name="name" required placeholder="Full Name *"></div>
                 <div class="input-group"><input type="tel" name="mobile" required placeholder="Mobile Number *"></div>
@@ -221,7 +309,7 @@
         </div>
     </div>
 
-    <!-- Feedback Modal -->
+    <!-- Feedback Modal with Star Rating -->
     <div id="feedbackModal" class="modal-overlay">
         <div class="modal-glass">
             <button class="close-btn" data-close="feedbackModal">&times;</button>
@@ -231,13 +319,26 @@
                 <div class="input-group"><input type="text" name="name" required placeholder="Your Name *"></div>
                 <div class="input-group"><input type="tel" name="mobile" required placeholder="Mobile Number *"></div>
                 <div class="input-group"><input type="email" name="email" required placeholder="Email Address *"></div>
+                
+                <div class="input-group" style="text-align: center;">
+                    <label style="color: var(--text-secondary); font-size: 14px; display: block; margin-bottom: 8px;">Rate my service:</label>
+                    <div class="star-rating" id="starRating">
+                        <i class="fas fa-star" data-rating="1"></i>
+                        <i class="fas fa-star" data-rating="2"></i>
+                        <i class="fas fa-star" data-rating="3"></i>
+                        <i class="fas fa-star" data-rating="4"></i>
+                        <i class="fas fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" name="rating" id="ratingValue">
+                </div>
+
                 <div class="input-group"><textarea name="review" rows="4" required placeholder="Write your feedback... *"></textarea></div>
                 <button type="submit" class="premium-btn submit-btn feedback-color"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
             </form>
         </div>
     </div>
 
-    <!-- Legal Info Modal -->
+    <!-- Detailed Legal Info Modal -->
     <div id="legalModal" class="modal-overlay">
         <div class="modal-glass legal-glass">
             <button class="close-btn" data-close="legalModal">&times;</button>
@@ -246,7 +347,7 @@
         </div>
     </div>
 
-    <!-- Dynamic Success Alert with Tracking Code Space -->
+    <!-- Dynamic Success Alert -->
     <div id="successAlert" class="custom-alert">
         <div class="alert-content">
             <div class="success-icon"><i class="fas fa-check-circle"></i></div>
