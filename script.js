@@ -31,21 +31,21 @@ document.addEventListener("DOMContentLoaded", () => {
         heroLogo.classList.toggle('hidden', window.scrollY > 150);
     });
 
-    // --- 3. Mobile Menu ---
+    // --- 3. Mobile Menu (UPDATED FOR 2-ROW) ---
     const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.getElementById('nav-links');
+    const navBottomRow = document.getElementById('nav-bottom-row');
     const navItems = document.querySelectorAll('.nav-links a');
 
     function closeMobileMenu() {
-        if(navLinks.classList.contains('active')) {
-            navLinks.classList.remove('active');
+        if(navBottomRow.classList.contains('active')) {
+            navBottomRow.classList.remove('active');
             mobileMenu.querySelector('i').classList.replace('fa-times', 'fa-bars');
         }
     }
     mobileMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        navBottomRow.classList.toggle('active');
         const icon = mobileMenu.querySelector('i');
-        navLinks.classList.contains('active') ? icon.classList.replace('fa-bars', 'fa-times') : icon.classList.replace('fa-times', 'fa-bars');
+        navBottomRow.classList.contains('active') ? icon.classList.replace('fa-bars', 'fa-times') : icon.classList.replace('fa-times', 'fa-bars');
     });
     navItems.forEach(item => item.addEventListener('click', closeMobileMenu));
 
@@ -315,4 +315,27 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('closeAlertBtn').addEventListener('click', () => {
         successAlert.classList.remove('active'); document.body.style.overflow = 'auto'; 
     });
+
+    // --- 11. Smart Video Player Logic ---
+    const allVideos = document.querySelectorAll('.portfolio-video');
+    
+    allVideos.forEach(video => {
+        video.addEventListener('play', () => {
+            allVideos.forEach(otherVideo => {
+                if (otherVideo !== video) {
+                    otherVideo.pause();
+                }
+            });
+        });
+    });
+
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                entry.target.pause(); 
+            }
+        });
+    }, { threshold: 0.1 }); 
+
+    allVideos.forEach(video => videoObserver.observe(video));
 });
