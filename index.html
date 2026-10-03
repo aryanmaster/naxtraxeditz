@@ -12,38 +12,45 @@
 
     <div id="cursor-glow"></div>
 
+    <!-- Redesigned 2-Row Navigation -->
     <nav id="navbar">
-        <a href="#home" class="logo-link">
-            <img src="logo.png" alt="Logo" class="nav-logo" id="navLogo">
-            <div class="logo-text">NAXTRAX<span>EDITZ</span></div>
-        </a>
-        
-        <div class="nav-right-controls">
+        <div class="nav-top-row">
+            <a href="#home" class="logo-link">
+                <img src="logo.png" alt="Logo" class="nav-logo" id="navLogo">
+                <div class="logo-text">NAXTRAX<span>EDITZ</span></div>
+            </a>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
-            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="#youtube"><i class="fab fa-youtube"></i> YouTube</a></li>
-            <li><a href="#softwares"><i class="fas fa-layer-group"></i> Softwares</a></li>
-            
-            <li class="mobile-only">
-                <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-search"></i> Track Edit</button>
-            </li>
-            <li class="mobile-only">
-                <button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book Edit</button>
-            </li>
-            <li class="mobile-only">
-                <button class="premium-btn feedbackBtnMobile" style="background: linear-gradient(45deg, #00f2fe, #4facfe);"><i class="fas fa-star"></i> Feedback</button>
-            </li>
-        </ul>
         
-        <div class="desktop-only" style="display: flex; gap: 10px;">
-            <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-search"></i> Track Edit</button>
-            <button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book an Edit</button>
+        <div class="nav-bottom-row" id="nav-bottom-row">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#youtube"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="#softwares"><i class="fas fa-layer-group"></i> Softwares</a></li>
+                <!-- NEW LINKS ADDED HERE -->
+                <li><a href="#reviews"><i class="fas fa-star"></i> Loved by Creators</a></li>
+                <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ's</a></li>
+                
+                <li class="mobile-only">
+                    <!-- New Vibrant Crimson Gradient for Track Edit -->
+                    <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #ff416c, #ff4b2b);"><i class="fas fa-search"></i> Track Edit</button>
+                </li>
+                <li class="mobile-only">
+                    <button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book Edit</button>
+                </li>
+                <li class="mobile-only">
+                    <button class="premium-btn feedbackBtnMobile" style="background: linear-gradient(45deg, #00f2fe, #4facfe);"><i class="fas fa-star"></i> Feedback</button>
+                </li>
+            </ul>
+            
+            <div class="desktop-only desktop-buttons">
+                <!-- New Vibrant Crimson Gradient for Track Edit -->
+                <button class="premium-btn trackBtnMobile" style="background: linear-gradient(45deg, #ff416c, #ff4b2b);"><i class="fas fa-search"></i> Track Edit</button>
+                <button class="premium-btn bookBtnMobile"><i class="fas fa-calendar-check"></i> Book an Edit</button>
+            </div>
         </div>
     </nav>
 
@@ -71,19 +78,19 @@
         <h2><i class="fas fa-briefcase gradient-icon"></i> My Best Edits</h2>
         <div class="grid-container">
             <div class="glass-card edit-card">
-                <video controls class="portfolio-video"><source src="edit1.mp4" type="video/mp4"></video>
+                <video controls playsinline webkit-playsinline preload="metadata" class="portfolio-video"><source src="edit1.mp4" type="video/mp4"></video>
                 <h3>Spider-Man Cool Edit</h3>
             </div>
             <div class="glass-card edit-card">
-                <video controls class="portfolio-video"><source src="edit2.mp4" type="video/mp4"></video>
+                <video controls playsinline webkit-playsinline preload="metadata" class="portfolio-video"><source src="edit2.mp4" type="video/mp4"></video>
                 <h3>Anime Edit</h3>
             </div>
             <div class="glass-card edit-card">
-                <video controls class="portfolio-video"><source src="edit3.mp4" type="video/mp4"></video>
+                <video controls playsinline webkit-playsinline preload="metadata" class="portfolio-video"><source src="edit3.mp4" type="video/mp4"></video>
                 <h3>Thor Cool Edit</h3>
             </div>
             <div class="glass-card edit-card">
-                <video controls class="portfolio-video"><source src="edit4.mp4" type="video/mp4"></video>
+                <video controls playsinline webkit-playsinline preload="metadata" class="portfolio-video"><source src="edit4.mp4" type="video/mp4"></video>
                 <h3>Smooth Montage</h3>
             </div>
         </div>
@@ -139,6 +146,7 @@
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Top tier aesthetic vibes! The text animation was so clean and modern."</p><h4>~ Kavya S.</h4></div>
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"I'm genuinely impressed by the attention to detail. Every frame is perfect."</p><h4>~ Pranav K.</h4></div>
                 
+                <!-- Group 1 Duplicated for Infinite Loop -->
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"NAXTRAX turned my raw gaming clips into an absolute masterpiece. The shakes and CC are insane!"</p><h4>~ Aryan K.</h4></div>
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The visual storytelling is fantastic. Completely transformed my boring vlog into a movie!"</p><h4>~ Kajal</h4></div>
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Best anime editor out there! The transitions were buttery smooth. Highly recommended."</p><h4>~ Rohan S.</h4></div>
@@ -175,6 +183,7 @@
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"The color correction brought so much life to the dull footage I provided."</p><h4>~ Shaurya V.</h4></div>
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Such a seamless experience! The final video was just breathtaking."</p><h4>~ Ritik A.</h4></div>
 
+                <!-- Group 2 Duplicated for Infinite Loop -->
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Insane motion blur and optical flow! Made my normal clips look 60fps smooth."</p><h4>~ Varun S.</h4></div>
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"Super cooperative and quick turnaround. The tracking code system is also very cool!"</p><h4>~ Aman Y.</h4></div>
                 <div class="review-card"><div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p>"My YouTube channel grew so much just because of these high-retention edits. Thank you!"</p><h4>~ Manish G.</h4></div>
@@ -285,7 +294,8 @@
                     <label id="captchaLabel" style="color: var(--text-secondary); margin-bottom: 8px; display: block; font-size: 14px;"></label>
                     <input type="number" id="captchaInput" required placeholder="Solve the math above">
                 </div>
-                <button type="submit" class="premium-btn submit-btn" style="background: linear-gradient(45deg, #f9a826, #f83600);"><i class="fas fa-satellite-dish"></i> Check Status</button>
+                <!-- New Vibrant Crimson Gradient for Track Edit Submit -->
+                <button type="submit" class="premium-btn submit-btn" style="background: linear-gradient(45deg, #ff416c, #ff4b2b);"><i class="fas fa-satellite-dish"></i> Check Status</button>
             </form>
             <div id="trackResult" style="margin-top: 20px; display: none; padding: 15px; border-radius: 10px; background: rgba(0,0,0,0.3); border: 1px solid var(--card-border); font-size: 14px; line-height: 1.6;"></div>
         </div>
@@ -295,8 +305,8 @@
     <div id="bookingModal" class="modal-overlay">
         <div class="modal-glass">
             <button class="close-btn" data-close="bookingModal">&times;</button>
-            <h2>Client Portal</h2>
-            <p>Fill in your details to book an edit.</p>
+            <h2>Booking Form</h2>
+            <p>Fill your details to book an edit.</p>
             <form id="bookingForm" action="https://formspree.io/f/mgawqzpn" method="POST">
                 <input type="hidden" name="Client_Tracking_Code" id="hiddenTrackingCode">
                 <div class="input-group"><input type="text" name="name" required placeholder="Full Name *"></div>
